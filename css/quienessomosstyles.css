@@ -1,0 +1,41 @@
+/* Fondo degradado pastel */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fce4ec, #e1f5fe, #e8f5e9);
+    background-size: 400% 400%;
+    animation: fondoAnimado 12s ease infinite;
+    color: #333;
+}
+
+/* Animación suave del degradado */
+@keyframes fondoAnimado {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Contenedor principal */
+.quienes-somos-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(31, 135, 219, 0.308); /* Amarillo pastel cálido */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Título */
+.quienes-somos-container h1 {
+    font-size: 2.5rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Texto */
+.quienes-somos-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}

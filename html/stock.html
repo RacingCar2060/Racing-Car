@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stock en Tiempo Real</title>
+  <link rel="stylesheet" href="../css/stockstyles.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 Stock en Tiempo Real</h1>
+    <p class="subtitle">Controla el inventario y detecta productos con bajo stock.</p>
+
+    <!-- Filtros -->
+    <div class="filters">
+      <select id="categoryFilter">
+        <option value="">Todas las categorías</option>
+      </select>
+      <button id="sortStockBtn">Ordenar por Stock</button>
+    </div>
+
+    <!-- Tabla de stock -->
+    <div class="table-container">
+      <table id="stockTable">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Categoría</th>
+            <th>Stock</th>
+          </tr>
+        </thead>
+        <tbody id="stockTableBody"></tbody>
+      </table>
+    </div>
+
+    <!-- Mensaje de carga o error -->
+    <p id="message" class="message hidden">Cargando productos...</p>
+  </div>
+
+  <script src="../js/stock.js"></script>
+</body>
+</html>

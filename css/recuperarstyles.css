@@ -1,0 +1,130 @@
+/* Fuente elegante */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+}
+
+/* Header con logo */
+.header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.logo {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 1.3rem;
+  margin: 5px 0;
+  color: #e63946;
+}
+
+.slogan {
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+/* Tarjeta principal */
+.card {
+  background: #f5f5f5;
+  color: #333;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.card h2 {
+  color: #e63946;
+  margin-bottom: 10px;
+}
+
+.info {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Inputs */
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #e63946;
+  outline: none;
+}
+
+/* Botón */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #e63946;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #cc2d39;
+}
+
+/* Links */
+.links {
+  margin-top: 15px;
+}
+
+.links a {
+  color: #e63946;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 0.8rem;
+  color: #aaa;
+}

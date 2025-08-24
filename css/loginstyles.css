@@ -1,0 +1,30 @@
+/* Estilos login */
+body {
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+#btnGoogleLogin {
+  background-color: #dd4b39;
+  border-color: #dd4b39;
+  font-weight: 600;
+}
+
+#btnGoogleLogin:hover {
+  background-color: #c23321;
+  border-color: #c23321;
+}
+
+a.text-primary:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.alert-danger {
+  font-size: 0.9em;
+  padding: 0.5rem;
+}

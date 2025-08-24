@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - Auto Boutique</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body class="bg-light">
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow-lg p-4" style="width: 400px; border-radius: 15px;">
+      <h3 class="text-center mb-4">Iniciar Sesión</h3>
+      <form id="loginForm">
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" id="email" class="form-control" placeholder="Ingresa tu correo" required />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" id="password" class="form-control" placeholder="Ingresa tu contraseña" required />
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+      </form>
+      <p class="text-center mt-3">
+        ¿No tienes cuenta? <a href="registro.html">Regístrate</a>
+      </p>
+      <p class="text-center mt-2">
+        <a href="recuperar.html">¿Olvidaste tu contraseña?</a>
+      </p>
+      <div id="errorMsg" class="text-danger text-center mt-2"></div>
+    </div>
+  </div>
+  <!-- Script de Firebase y login.js -->
+  <script type="module" src="../js/login.js"></script>
+</body>
+</html>

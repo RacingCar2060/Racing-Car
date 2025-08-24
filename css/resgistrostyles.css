@@ -1,0 +1,33 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+h3 {
+  font-weight: 600;
+  color: #198754;
+}
+
+.btn-success {
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.btn-success:hover {
+  background-color: #146c43;
+  border-color: #146c43;
+}
+
+.alert-success {
+  font-size: 0.9em;
+  padding: 0.5rem;
+}
+
+.invalid-feedback {
+  display: block;
+  font-size: 0.85em;
+  margin-top: 0.25rem;
+}

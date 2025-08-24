@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pago</title>
+    <link rel="stylesheet" href="../css/pagostyles.css">
+</head>
+<body>
+
+<div class="pago-container">
+    <h1>Pago</h1>
+    <form id="form-pago">
+        <label>Nombre completo</label>
+        <input type="text" required>
+
+        <label>Correo electrónico</label>
+        <input type="email" required>
+
+        <label>Método de pago</label>
+        <select id="metodo-pago" required>
+            <option value="">Seleccione un método</option>
+            <option value="tarjeta">Tarjeta de crédito/débito</option>
+            <option value="yape">Yape</option>
+            <option value="plin">Plin</option>
+            <option value="efectivo">Efectivo contra entrega</option>
+        </select>
+
+        <!-- Datos de tarjeta -->
+        <div id="tarjeta-info" class="metodo-extra">
+            <label>Número de tarjeta</label>
+            <input type="text" maxlength="16">
+
+            <label>Fecha de expiración</label>
+            <input type="month">
+
+            <label>Código CVV</label>
+            <input type="text" maxlength="3">
+        </div>
+
+        <!-- QR Yape -->
+        <div id="qr-yape" class="metodo-extra qr">
+            <p>Escanea para pagar con Yape</p>
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1iQdE96JLCK_Qlj9jXjE-rwYDdgd5zXKspa-1YpExTfRI0QwZgr1_EBojVjYWGg2014E&usqp=CAU" width="150" alt="QR Plin">
+
+        </div>
+
+        <!-- QR Plin -->
+        <div id="qr-plin" class="metodo-extra qr">
+            <p>Escanea para pagar con Plin</p>
+           <img src="https://i.pinimg.com/236x/60/58/b5/6058b59d7cc3e8badb75d223e82eb6c3.jpg" width="150" alt="QR Plin">
+
+        </div>
+
+        <button type="submit">Pagar</button>
+    </form>
+</div>
+
+<script>
+    const metodoPago = document.getElementById("metodo-pago");
+    const tarjetaInfo = document.getElementById("tarjeta-info");
+    const qrYape = document.getElementById("qr-yape");
+    const qrPlin = document.getElementById("qr-plin");
+
+    metodoPago.addEventListener("change", () => {
+        // Oculta todos
+        tarjetaInfo.style.display = "none";
+        qrYape.style.display = "none";
+        qrPlin.style.display = "none";
+
+        // Muestra según opción
+        if (metodoPago.value === "tarjeta") {
+            tarjetaInfo.style.display = "block";
+        } else if (metodoPago.value === "yape") {
+            qrYape.style.display = "block";
+        } else if (metodoPago.value === "plin") {
+            qrPlin.style.display = "block";
+        }
+    });
+
+    document.getElementById("form-pago").addEventListener("submit", e => {
+        e.preventDefault();
+        alert("Pago procesado con éxito (simulación)");
+        localStorage.removeItem("carrito");
+        window.location.href = "index.html";
+    });
+</script>
+
+</body>
+</html>
