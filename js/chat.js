@@ -133,7 +133,7 @@ function enviarMensaje() {
     setTimeout(() => {
       addBotMessage("¡Perfecto! 🚀 Te redirijo con un agente por WhatsApp para que te atienda personalmente.");
       setTimeout(() => {
-        window.open("https://wa.me/976706434", "_blank"); // ✅ Número corregido
+        window.open("https://wa.me/981257739", "_blank"); // ✅ Número corregido
       }, 1200);
     }, 600);
     return;
